@@ -1,0 +1,5 @@
+#crontab
+#every hour: 0 * * * * sh path-to/captain-rum/scripts/run-captain.sh
+
+#every day at midnight
+0 0 * * * sh path-to/captain-rum/scripts/run-captain.sh

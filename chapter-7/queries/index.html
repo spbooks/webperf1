@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Queries by bbinto</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Lean Websites</h1>
+        <i>Queries and other material</i>
+       </header>
+      <section>
+        <h2>Big Query</h2>
+        <h3>Most used image formats of Top Alexa Websites</h3>
+     <pre>
+SELECT mimeType, ct * 100 AS percent FROM (
+  SELECT COUNT(requestid) as total, 
+    RATIO_TO_REPORT(total) OVER() AS ct, mimeType
+  FROM [httparchive:runs.latest_requests]
+  WHERE mimeType LIKE "image/%"
+  GROUP BY mimeType
+  ORDER BY ct DESC
+) </pre>
+       
+<h2>HTTP Archive </h2>
+<h3>How many JSON files are not gzipped?</h3>
+<pre>
+    select distinct(url),resp_content_encoding, mimeType from requests
+    where mimeType like '%json%' and resp_content_encoding is NULL
+    and url like 'http://www.cbc.ca%'
+</pre>
+
+
+<h3>How many sites use duplicate scripts?</h3>
+
+
+    </section>
+    </div>
+    <script src="../javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

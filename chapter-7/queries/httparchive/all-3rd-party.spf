@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>httparchive</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>root@127.0.0.1</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK8QDwcIFRYXGBkdJCouMjU4PFUkbnVs
+			bNMJCgsMDRFWJGNsYXNzV05TLmtleXNaTlMub2JqZWN0c4AOow4P
+			EIACgAOABKMSExSABYAGgAhUdHlwZVRyb3dzVGtleXNfECZTZWxl
+			Y3Rpb25EZXRhaWxUeXBlUHJpbWFyeUtleWVkRGV0YWlsc9MJCgsa
+			GxyAB6Cg0h4fICFaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0
+			YWJsZURpY3Rpb25hcnmjICIjXE5TRGljdGlvbmFyeVhOU09iamVj
+			dNIJCyUmgA2jJygpgAmAC4AM0gkrLC1ZTlMuc3RyaW5ngApVbGFi
+			ZWzSHh8vMF8QD05TTXV0YWJsZVN0cmluZ6MvMSNYTlNTdHJpbmfS
+			CSssNIAKVXNsaWNl0gkrLDeAClZkZXZpY2XSHh85Ol5OU011dGFi
+			bGVBcnJheaM5OyNXTlNBcnJhedIeHyI9oiIjXxAPTlNLZXllZEFy
+			Y2hpdmVy0UBBVGRhdGGAAQAIABEAGgAjAC0AMgA3AEkATwBWAF0A
+			ZQBwAHIAdgB4AHoAfACAAIIAhACGAIsAkACVAL4AxQDHAMgAyQDO
+			ANkA4gD4APwBCQESARcBGQEdAR8BIQEjASgBMgE0AToBPwFRAVUB
+			XgFjAWUBawFwAXIBeQF+AY0BkQGZAZ4BoQGzAbYBuwAAAAAAAAIB
+			AAAAAAAAAEIAAAAAAAAAAAAAAAAAAAG9
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1732, 901}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+#select onLoad, wptid from pages where onLoad &gt; 0 group by onLoad
+
+
+#SELECT onLoad, COUNT(*) AS freq FROM pages GROUP BY onLoad
+
+SELECT onLoad
+  FROM pages where onLoad &gt; 0 seorder by onLoad
+</string>
+			<key>table</key>
+			<string>stats</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>202</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>select perClibs from stats where perClibs &gt; 0</string>
+		<string>select numClibs from stats where numClibs &gt; 0</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+#select onLoad, wptid from pages where onLoad &gt; 0 group by onLoad
+
+
+#SELECT onLoad, COUNT(*) AS freq FROM pages GROUP BY onLoad
+
+SELECT onLoad
+  FROM pages where onLoad &gt; 0 order by onLoad</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+#select onLoad, wptid from pages where onLoad &gt; 0 group by onLoad
+
+
+#SELECT onLoad, COUNT(*) AS freq FROM pages GROUP BY onLoad
+
+SELECT onLoad
+  FROM pages</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+#select onLoad, wptid from pages where onLoad &gt; 0 group by onLoad
+
+
+#SELECT onLoad, COUNT(*) AS freq FROM pages GROUP BY onLoad
+
+SELECT onLoad
+  FROM pages 
+ GROUP BY onLoad</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+#select onLoad, wptid from pages where onLoad &gt; 0 group by onLoad
+
+
+#SELECT onLoad, COUNT(*) AS freq FROM pages GROUP BY onLoad
+
+SELECT onLoad,
+       COUNT( onLoad ) AS Frequency
+  FROM pages 
+ GROUP BY onLoad</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+#select onLoad, wptid from pages where onLoad &gt; 0 group by onLoad
+
+
+#SELECT onLoad, COUNT(*) AS freq FROM pages GROUP BY onLoad
+
+SELECT onLoad,
+       COUNT( onLoad ) AS Frequency
+  FROM pages 
+ GROUP BY onLoad
+ ORDER BY Frequency DESC</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+#select onLoad, wptid from pages where onLoad &gt; 0 group by onLoad
+
+
+SELECT onLoad, COUNT(*) AS freq FROM pages GROUP BY onLoad</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select onLoad, wptid from pages where onLoad &gt; 0 group by onLoad</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select onLoad, wptid from pages group by onLoad</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(wptid)) as count,(100*count(distinct(wptid))/1611) as percent from pages group by onLoad</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count,(100*count(distinct(pageid))/1636) as percent from requests where 
+(url like "%://cdn.gigya.com%")</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count,(100*count(distinct(pageid))/1636) as percent from requests where 
+(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%" or url like "%://b.scorecardresearch.com%" or url like "%://apis.google.com%"
+or url like "%://ads.doubleclick.net%" or url like "%://platform.twitter.com" or url like "%://cdn.clicktale.net" or url like "%://cdn.gigya.com%")</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count,(100*count(distinct(pageid))/1636) as percent from requests where 
+(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%" or url like "%://b.scorecardresearch.com%" or url like "%://apis.google.com%"
+or url like "%://ads.doubleclick.net%" or url like "%://platform.twitter.com" or url like "%://cdn.clicktale.net")</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count,(100*count(distinct(pageid))/1636) as percent from requests where 
+(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%" or url like "%://b.scorecardresearch.com%" or url like "%://apis.google.com%"
+or url like "%://ads.doubleclick.net%" or url like "%://platform.twitter.com")</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count,(100*count(distinct(pageid))/1636) as percent from requests where 
+(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%" or url like "%://b.scorecardresearch.com%" or url like "%://apis.google.com%"
+or url like "%://ads.doubleclick.net%" or url like "%://platform.twitter.com") and mimeType like "%script"</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count,(100*count(distinct(pageid))/1636) as percent, url from requests where 
+(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%" or url like "%://b.scorecardresearch.com%" or url like "%://apis.google.com%"
+or url like "%://ads.doubleclick.net%" or url like "%://platform.twitter.com") and mimeType like "%script"</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count,(100*count(distinct(pageid))/1636) as percent, url from requests where 
+(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%" or url like "%://b.scorecardresearch.com%" or url like "%://apis.google.com%"
+or url like "%://ads.doubleclick.net%" or url like "%://platform.twitter.com") and mimeType like "%script" group by url</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count,(100*count(distinct(pageid))/1636) as percent from requests where 
+(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"</string>
+		<string>#select count(distinct(pageid)) as count,(100*count(distinct(pageid))/964) as percent from requests where 
+#(url like "%://connect.facebook.net%" or url like "%://static.ak.fbcdn.net%") and mimeType like "%script"
+
+select count(distinct(pageid)) as count from requests
+
+
+#select count(requestid) as ct, mimeType 
+#  from requests 
+#  group by mimeType 
+#  order by ct desc;</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.10</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

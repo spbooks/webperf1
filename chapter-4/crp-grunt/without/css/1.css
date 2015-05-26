@@ -1,0 +1,14 @@
+/* 1.css */
+
+#magic-show { margin: auto }
+
+h3 {text-align:center;}
+.pics { height: 307px; width: 460px; padding:0; margin:0; overflow: hidden }
+.pics img { height: 307px; width: 460px; padding: 15px; border: 1px solid #ccc; background-color: #eee; top:0; left:0 }
+.pics img {-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+
+article {
+	margin-top:-20px;
+}
+.navi {width:100%;text-align:center;margin-bottom:10px;}
+button {border:1px solid transparent;}

@@ -1,0 +1,20 @@
+
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8 />
+<title>Concat Scripts with conditional loading</title>
+<script src="modernizr.js"></script>
+</head>
+<body>
+	<h1>Concatenated</h1>
+	<div id="demo"/>
+	<script>
+	yepnope({
+	  test: Modernizr.geolocation,
+	  yep: 'geo.js'
+	});
+	</script>
+
+</body>
+</html>

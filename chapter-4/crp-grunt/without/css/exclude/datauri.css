@@ -1,0 +1,9 @@
+/* 1.css */
+
+#logo {
+	background: url(../../img/unicorn.jpg); 
+	height:50px;
+	width:50px;
+	margin:auto;
+}
+

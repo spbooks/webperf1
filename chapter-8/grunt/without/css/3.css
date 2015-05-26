@@ -1,0 +1,24 @@
+/* 3.css */
+
+.leadStory.secondary p.watchKick,
+.leadStory.tertiary p.watchKick { float: none !important; width: auto !important; }
+
+/* overrides for fluid gallery in topstory lineup templates */
+.newsIdx .galleryContainer { width: 460px; height: 259px; margin-top: 10px; }
+.secIdx .galleryContainer { width: 300px; height: 257px; margin-top: 10px; }
+
+.newsIdx .major .galleryContainer { width: 620px; height: 497px; }
+
+.newsIdx .leadStory.major .galleryContainer ul,
+.secIdx .leadStory.major .galleryContainer ul { margin-top: 0; }
+
+.secIdx .leadStory.major .cbcfg ul.captions li { font-size: 0px; width: 280px; }
+.secIdx .leadStory.major .cbcfg ul.captions.on li { font-size: 12px; }
+
+.secIdx .leadStory.major .cbcfg ul  { width: 300px; margin-top: 0; }
+.newsIdx .leadStory.major .cbcfg ul.captions { width: 620px; margin-top: 0; }
+
+.secIdx .leadStory.major .cbcfg ul li { width: 280px; float: none; display: none; }
+.newsIdx .leadStory.major .cbcfg ul.captions li { width: 600px; float: none; display: none; }
+
+.secIdx .leadStory.major .cbcfg li { width: auto; }

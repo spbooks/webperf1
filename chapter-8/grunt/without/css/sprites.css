@@ -1,0 +1,2 @@
+button.left { background: url('../img/sprites/left.png') no-repeat; width: 30px; height: 30px;}
+button.right { background: url('../img/sprites/right.png') no-repeat; width: 30px; height: 30px; }

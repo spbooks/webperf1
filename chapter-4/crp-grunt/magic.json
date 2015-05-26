@@ -1,0 +1,13 @@
+{
+  "name": "magic",
+  "title": "Magic Perf with Grunt",
+  "description": "A really, really simple example how you can use Grunt for FEO",
+  "version": "0.0.1",
+  "src": "without",
+  "dest": "with", 
+  "publicURL": "http://localhost/grunt-magic/with",
+  "author": {
+    "name": "Barbara Bermes (@bbinto)"
+  },
+  "keywords": ["magic", "grunt", "performance"]
+}
